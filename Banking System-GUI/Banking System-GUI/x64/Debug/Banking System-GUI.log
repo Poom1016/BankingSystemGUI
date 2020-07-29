@@ -1,0 +1,21 @@
+﻿  MainWindow.cpp
+C:\Users\pooma\source\repos\Banking System-GUI\Banking System-GUI\MainWindow.cpp(268,40): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\pooma\source\repos\Banking System-GUI\Banking System-GUI\MainWindow.cpp(269,58): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\pooma\source\repos\Banking System-GUI\Banking System-GUI\MainWindow.cpp(270,58): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\pooma\source\repos\Banking System-GUI\Banking System-GUI\MainWindow.cpp(271,59): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\pooma\source\repos\Banking System-GUI\Banking System-GUI\MainWindow.cpp(546,35): warning C4244: 'argument': conversion from 'float' to 'long', possible loss of data
+C:\Users\pooma\source\repos\Banking System-GUI\Banking System-GUI\MainWindow.cpp(621,36): warning C4244: 'argument': conversion from 'float' to 'long', possible loss of data
+C:\Users\pooma\source\repos\Banking System-GUI\Banking System-GUI\MainWindow.cpp(705,37): warning C4244: 'argument': conversion from 'float' to 'long', possible loss of data
+C:\Users\pooma\source\repos\Banking System-GUI\Banking System-GUI\MainWindow.cpp(796,43): warning C4244: 'argument': conversion from 'float' to 'long', possible loss of data
+C:\Users\pooma\source\repos\Banking System-GUI\Banking System-GUI\MainWindow.cpp(800,26): warning C4244: 'initializing': conversion from 'float' to 'long', possible loss of data
+C:\Users\pooma\source\repos\Banking System-GUI\Banking System-GUI\MainWindow.cpp(926,43): warning C4244: 'argument': conversion from 'float' to 'long', possible loss of data
+C:\Users\pooma\source\repos\Banking System-GUI\Banking System-GUI\MainWindow.cpp(930,26): warning C4244: 'initializing': conversion from 'float' to 'long', possible loss of data
+  System.cpp
+  Generating Code...
+C:\Users\pooma\source\repos\Banking System-GUI\Banking System-GUI\MainWindow.cpp(485): warning C4715: 'DialogOpenAccountProcedure': not all control paths return a value
+C:\Users\pooma\source\repos\Banking System-GUI\Banking System-GUI\MainWindow.cpp(564): warning C4715: 'DialogCloseAccountProcedure': not all control paths return a value
+C:\Users\pooma\source\repos\Banking System-GUI\Banking System-GUI\MainWindow.cpp(647): warning C4715: 'DialogDepositProcedure': not all control paths return a value
+C:\Users\pooma\source\repos\Banking System-GUI\Banking System-GUI\MainWindow.cpp(731): warning C4715: 'DialogWithdrawProcedure': not all control paths return a value
+C:\Users\pooma\source\repos\Banking System-GUI\Banking System-GUI\MainWindow.cpp(951): warning C4715: 'DialogBalanceEnquiryNOProcedure': not all control paths return a value
+C:\Users\pooma\source\repos\Banking System-GUI\Banking System-GUI\MainWindow.cpp(821): warning C4715: 'DialogBalanceEnquiryIDProcedure': not all control paths return a value
+  Banking System-GUI.vcxproj -> C:\Users\pooma\source\repos\Banking System-GUI\x64\Debug\Banking System-GUI.exe

@@ -1,0 +1,4 @@
+// Microsoft Visual C++ generated Help ID include file.
+// Used by Banking System-GUI.rc
+//
+#define HCloseButton                    0x80030403    // IDABORT

@@ -1,0 +1,286 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource1.h"
+
+// Generated Help ID header file
+#define APSTUDIO_HIDDEN_SYMBOLS
+#include "resource1.hm"
+#undef APSTUDIO_HIDDEN_SYMBOLS
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "winres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (United States) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource1.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""winres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDABORT DIALOGEX 0, 0, 310, 175
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+EXSTYLE WS_EX_CLIENTEDGE | WS_EX_APPWINDOW
+CAPTION "About"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "Banking System Version - Alpha 1.0.1",IDC_STATIC,7,7,296,11
+    LTEXT           "Registered under the MIT license",IDC_STATIC,7,38,296,8
+    LTEXT           "-------------------------------------------------------------------------------------------------------------------------------------------------------------",IDC_STATIC,7,20,296,8
+    LTEXT           "To learn more, go to https://github.com/Poom1016/BankingSystemGUI/blob/master/LICENSE",IDC_STATIC,7,63,296,28
+    LTEXT           "Created By Siwakorn Kosavithidkul",IDC_STATIC,7,113,111,8
+    PUSHBUTTON      "Close",CloseButton,253,149,50,19,WS_GROUP,WS_EX_DLGMODALFRAME | WS_EX_CLIENTEDGE,HCloseButton
+END
+
+AboutCreator DIALOGEX 0, 0, 309, 96
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About Creator"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "Cancel",CloseButton,252,70,50,19,0,WS_EX_DLGMODALFRAME | WS_EX_CLIENTEDGE
+    LTEXT           "Created By Siwakorn Kosavithidkul",IDC_STATIC,7,7,111,8
+    LTEXT           "Facebook : Siwakorn Kosavithidkul",IDC_STATIC,7,30,295,12
+    LTEXT           "Instagram : this_is_poom10.15",IDC_STATIC,7,42,100,8
+    LTEXT           "Github : Poom1016",IDC_STATIC,7,54,62,8
+END
+
+OAccount DIALOGEX 0, 0, 309, 176
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Open Account"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "Cancel",CloseButton,252,150,50,19,0,WS_EX_DLGMODALFRAME
+    LTEXT           "Account First Name",IDC_STATIC,7,7,63,8
+    EDITTEXT        FIRSTNAME,7,23,280,14,ES_AUTOHSCROLL
+    LTEXT           "Account Last Name",IDC_STATIC,7,44,62,8
+    EDITTEXT        LASTNAME,7,59,280,14,ES_AUTOHSCROLL
+    LTEXT           "Account Balance ($)",IDC_STATIC,7,82,65,8
+    EDITTEXT        ACCBALANCE,7,97,280,14,ES_AUTOHSCROLL,WS_EX_CLIENTEDGE
+    DEFPUSHBUTTON   "OK",OkButton,197,150,50,19,0,WS_EX_DLGMODALFRAME | WS_EX_CLIENTEDGE
+END
+
+IDD_DIALOG1 DIALOGEX 0, 0, 309, 176
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,198,155,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,252,155,50,14
+    LTEXT           "Static",IDC_STATIC,42,71,19,8
+END
+
+CLSEACCOUNT DIALOGEX 0, 0, 309, 176
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",OkButton,198,155,50,14,0,WS_EX_CLIENTEDGE
+    PUSHBUTTON      "Cancel",CancelButton,252,155,50,14
+    LTEXT           "Enter Account Number",IDABORT,12,12,73,8
+    EDITTEXT        DELETEACCOUNTNO,12,30,282,14,ES_AUTOHSCROLL
+END
+
+IDD_DIALOG2 DIALOGEX 0, 0, 309, 176
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_MINIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,198,155,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,252,155,50,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDABORT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 303
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 168
+    END
+
+    AboutCreator, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 302
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 89
+    END
+
+    OAccount, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 302
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 169
+    END
+
+    IDD_DIALOG1, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 302
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 169
+    END
+
+    CLSEACCOUNT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 302
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 169
+    END
+
+    IDD_DIALOG2, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 302
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 169
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// AFX_DIALOG_LAYOUT
+//
+
+IDABORT AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+AboutCreator AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+OAccount AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_DIALOG1 AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+CLSEACCOUNT AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_DIALOG2 AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU1 MENU
+BEGIN
+    POPUP "Banking System"
+    BEGIN
+        MENUITEM "Github Link",                 ID_BANKINGSYSTEM_GITHUBLINK
+        MENUITEM "Quit",                        ID_BANKINGSYSTEM_QUIT
+    END
+    POPUP "File", MENUBREAK
+    BEGIN
+        MENUITEM "Open Account",                ID_FILE_OPENACCOUNT
+        MENUITEM "Close Account",               ID_FILE_CLOSEACCOUNT
+    END
+    POPUP "Edit"
+    BEGIN
+        MENUITEM "Deposit",                     ID_EDIT_DEPOSIT
+        MENUITEM "Withdraw",                    ID_EDIT_WITHDRAW
+    END
+    POPUP "Show"
+    BEGIN
+        MENUITEM "All Accounts",                ID_SHOW_ALLACCOUNTS
+        POPUP "Balance Enquiry"
+        BEGIN
+            MENUITEM "Give Account ID",             ID_BALANCEENQUIRY_GIVEID
+            MENUITEM "Give Account Number",         ID_BALANCEENQUIRY_GIVEACCOUNTNUMBER
+        END
+    END
+    POPUP "View"
+    BEGIN
+        MENUITEM "Previous Account",            ID_VIEW_PREVIOUSACCOUNT
+        MENUITEM "Next Account",                ID_VIEW_NEXTACCOUNT
+    END
+    POPUP "Help"
+    BEGIN
+        MENUITEM "Tutorials",                   ID_HELP_TUTORIALS
+        POPUP "About"
+        BEGIN
+            MENUITEM "About",                       ID_ABOUT_ABOUT
+            MENUITEM "About Creator",               ID_ABOUT_ABOUTCREATOR
+        END
+    END
+END
+
+#endif    // English (United States) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
