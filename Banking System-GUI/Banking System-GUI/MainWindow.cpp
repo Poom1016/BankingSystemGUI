@@ -219,7 +219,9 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
     TCHAR greeting2[] = L"Go to File > Open Account to Open an Account";
     TCHAR greeting3[] = L"Go to File > Close Account to Close an Account";
     TCHAR greeting4[] = L"For More Tutorials, Go to https://github.com/Poom1016/BankingSystemGUI/Tutorials/";
-    std::string myUrl = "https://github.com/Poom1016/BankingSystemGUI/";
+    std::string myUrl = "https://poom1016.github.io/Banking-System-Website/tutorials.html";
+    std::string myUrl2 = "https://github.com/Poom1016/BankingSystemGUI/";
+    std::string myUrl3 = "https://poom1016.github.io/Banking-System-Website/index.html";
     
     switch (message)
     {
@@ -228,9 +230,12 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
 
 	    switch (wParam)
 	    {
-        
+        case 11:
+            system(std::string("start " + myUrl3).c_str());
+            break;
         case 12:
             MessageBox(NULL, L"https://github.com/Poom1016/BankingSystemGUI/", L"Gitbub Link",MB_RIGHT);
+	    	system(std::string("start " + myUrl2).c_str());
             break;
         case 13:
             DestroyWindow(hWnd);
@@ -318,6 +323,7 @@ void AddMenu(HWND hWND)
 	AppendMenu(hMENU,MF_POPUP,(UINT_PTR)hBSMenu,L"    Banking System    ");
 
 		//AppendMenu(hBSMenu, MF_STRING, 11, L"Preferences");
+		AppendMenu(hBSMenu, MF_STRING, 11, L"Website");
         AppendMenu(hBSMenu, MF_STRING, 12, L"Github Link");
         AppendMenu(hBSMenu, MF_STRING, 13, L"Quit");
 	
@@ -1047,7 +1053,7 @@ void Display_Show_Accounts_Dialog(const HWND hWnd)
 	}
     else
     {
-        while (!infile.eof())
+        do
         {
             infile >> ACCNUMBER;
             infile >> FNAME;
@@ -1058,7 +1064,7 @@ void Display_Show_Accounts_Dialog(const HWND hWnd)
             LNAME.erase(std::find(LNAME.begin(), LNAME.end(), '\0'), LNAME.end());
         	
             MESSAGE = MESSAGE + "Account Number: " + std::to_string(ACCNUMBER) + "\nFirst Name: " + FNAME + "\nLast Name: " + LNAME + "\nBalance: " + std::to_string(BALANCE) + "\n\n";
-        }
+        } while (!infile.eof());
         infile.close();
         //MESSAGE.erase(std::find(MESSAGE.begin(), MESSAGE.end(), '\0'), MESSAGE.end());
        // MESSAGE = MESSAGE + "\0";

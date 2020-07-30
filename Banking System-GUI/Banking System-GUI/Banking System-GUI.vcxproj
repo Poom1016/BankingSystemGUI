@@ -155,6 +155,9 @@
   <ItemGroup>
     <None Include="resource1.hm" />
   </ItemGroup>
+  <ItemGroup>
+    <Image Include="BS2.ico" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
