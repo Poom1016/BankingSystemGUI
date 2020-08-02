@@ -20,6 +20,8 @@ BankAccount System::OpenAccount(std::string FName, std::string LName, float Bala
     std::ofstream ReadFile;
     BankAccount account(FName, LName, Balance);
     AccountArr.insert(std::pair<long, BankAccount>(account.GetAccountNumber(), account));
+    long AccountNumber = account.GetAccountNumber();
+	
     ReadFile.open("System.data", std::ios::trunc);
     std::map<long, BankAccount>::iterator Iterator;
     for (Iterator = AccountArr.begin(); Iterator != AccountArr.end(); Iterator++) {

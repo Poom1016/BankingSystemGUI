@@ -1040,7 +1040,8 @@ void Register_Show_Accounts_Dialog_Class(HINSTANCE hInst)
 
 void Display_Show_Accounts_Dialog(const HWND hWnd)
 {
-    long ACCNUMBER;
+    int ACCNUMBER;
+    int OLDACCNUMBER = 0;
     float BALANCE;
     std::ifstream infile;
     std::string FNAME;
@@ -1053,18 +1054,24 @@ void Display_Show_Accounts_Dialog(const HWND hWnd)
 	}
     else
     {
-        do
+        while (!infile.eof())
         {
+        	
             infile >> ACCNUMBER;
             infile >> FNAME;
             infile >> LNAME;
             infile >> BALANCE;
 
-            FNAME.erase(std::find(FNAME.begin(), FNAME.end(), '\0'), FNAME.end());
-            LNAME.erase(std::find(LNAME.begin(), LNAME.end(), '\0'), LNAME.end());
-        	
-            MESSAGE = MESSAGE + "Account Number: " + std::to_string(ACCNUMBER) + "\nFirst Name: " + FNAME + "\nLast Name: " + LNAME + "\nBalance: " + std::to_string(BALANCE) + "\n\n";
-        } while (!infile.eof());
+        	if(!ACCNUMBER == OLDACCNUMBER)
+        	{
+                FNAME.erase(std::find(FNAME.begin(), FNAME.end(), '\0'), FNAME.end());
+                LNAME.erase(std::find(LNAME.begin(), LNAME.end(), '\0'), LNAME.end());
+
+                MESSAGE = MESSAGE + "Account Number: " + std::to_string(ACCNUMBER) + "\nFirst Name: " + FNAME + "\nLast Name: " + LNAME + "\nBalance: " + std::to_string(BALANCE) + "\n\n";
+        	}
+            OLDACCNUMBER = ACCNUMBER;
+            
+        } 
         infile.close();
         //MESSAGE.erase(std::find(MESSAGE.begin(), MESSAGE.end(), '\0'), MESSAGE.end());
        // MESSAGE = MESSAGE + "\0";
